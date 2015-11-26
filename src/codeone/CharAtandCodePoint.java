@@ -19,6 +19,11 @@ public class CharAtandCodePoint {
         codePoint .. Unicode, --> 0x000000-0x10FFFF
         while codePoint > 0xFFFF, one codePoint == two char in Java
         so the length of string == the number of codePoint in the string //?
+
+        and
+        in method indexOf(int ch), lastIndexOf(int ch), the "ch" means Unicode code point
+        in method length(), the return is the number of Unicode code units in the string
+        in method codePointCount(), the return is the number of Unicode code points in the string
          */
     }
 }
