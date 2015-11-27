@@ -4,6 +4,7 @@
  * date: 2015/11/27
  * time: 10:26
  * description: print a calendar
+ *                  -- a sample in the book
  */
 package codeone;
 
@@ -40,7 +41,7 @@ public class CalendarTest {
 
         System.out.println();
         for (int i = 1; i <= indent; i++) {
-            System.out.print("    ");
+            System.out.print("    ");   //%4s = %3s + "*" / " "
         }
 
         d.set(Calendar.DAY_OF_MONTH, 1);
@@ -55,6 +56,7 @@ public class CalendarTest {
 
             d.add(Calendar.DAY_OF_MONTH, 1);
             weekday = d.get(Calendar.DAY_OF_WEEK);
+            //every a week, change a line
             if (weekday == firstDayOfWeek) {
                 System.out.println();
             }
